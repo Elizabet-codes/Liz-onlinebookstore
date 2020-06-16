@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: rgb(124, 111, 111); */
+  background: rgb(19, 15, 15);
+  /* background:rgb(180, 60, 80); */
+    font-family: 'MuseoModerno', cursive;
+    list-style: none;
+    color:white;
+    margin:2rem 1rem;
+    padding:1rem;
+    
+}
+
+.container{
+    /* background: rgb(24, 20, 20); */
+    /* margin:2rem 1rem; */
+    padding:1rem;
+   
+}
+
+.part-one, .part-two, .part-three{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+input{
+    padding: 12px 20px;
+  margin: 8px 0;
+  font-family: 'MuseoModerno', cursive;
+ 
+}
+.fas fa-phone{
+    margin-left: 1.3rem;
+}
+
+
+
+nav{
+    margin-top: 1rem;
+    cursor:pointer;
+
+}
+
+.part-three{
+    border-bottom: 2px solid white;
+    box-shadow: 5px 5px 15px -1px #000000;
+    background:rgb(180, 60, 80); 
+}
+
+.carousel-area {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'carousel ad-area';
+      margin-top: 1rem;
+      box-shadow: -3px 5px 11px 0px rgba(50, 50, 50, 0.75);
+  }
+
+.carousel{
+    display:grid;
+ 
+   
+}
+
+
+.ad-area{
+    display:grid;
+}
+
+.ad-area img{
+    width:400px;
+}
+img {
+    max-width: 100%;
+  }
+
+  .title{
+      font-size:3rem;
+      
+  }
+  .best-sellers, .new-arrivals{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+     
+  }
+.best-seller, .new-arrival{
+  
+    margin:2rem;
+    /* border:1px solid white; */
+    padding:2rem;
+    background: rgb(68, 59, 59);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    
+}
+  .best-seller img, .new-arrival img{
+      height:100px;
+      width:100px;
+     
+  }
+  
+  .btn-cart, .btn-card{
+      padding:.6rem 1rem;
+      margin:1rem;
+      font-family: 'MuseoModerno', cursive;
+      color:rgb(245, 11, 11);
+      font-weight: bold;
+      cursor: pointer;
+      border:none;
+      border-radius: .5rem;
+      outline:none;
+  }
+  
+  .btn-cart:hover,.btn-card:hover{
+      background: rgb(122, 122, 177);
+  }
+
+  .recommendation,.card-recommend,.minor-news{
+      display:flex;
+  }
+  .recommendation{
+      flex-wrap:wrap;
+  }
+
+  .card-recommend{
+    background: rgb(49, 49, 39);
+    font-weight:bold;
+    margin:1rem;
+   
+  }
+
+
+  .right-read{
+      text-align:left;
+      padding:.9rem;
+      line-height: 1.5rem;
+      width: 40%;
+  }
+
+  .time-stamp{
+      display:flex;
+      justify-content: space-evenly;
+  }
+
+  .news-books{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .news-card{
+      margin:1rem;
+      background: rgb(68, 59, 59);
+   
+  }
+ 
+  .news-card-second{
+      margin:1rem;
+      padding:1rem;
+      background:rgb(180, 60, 80); 
+    
+  }
+  .news-card-second img{
+     width:200px;
+     height:200px;
+     object-fit: cover;
+  }
+
+  .discount-ad{
+      background: rgb(180, 180, 39);
+     text-align:center;
+     padding:4rem;
+     color:black;
+  }
+  a{
+      text-decoration: none;
+      color:black;
+      font-weight: bold;
+  }
+  .popular-authors, .about-us{
+      display:flex;
+     
+  }
+
+  .discount-ad{
+      margin: 2rem;
+  }
+  .popular-authors{
+     justify-content: center;
+      flex-wrap: wrap;
+      
+  }
+  .author img{
+      width:150px;
+      height:200px;
+      object-fit: cover;
+      margin:1rem;
+     
+  }
+  .about-us{
+      margin:2rem;
+     
+      
+  }
+
+  .about-us-one{
+      margin-right: 4rem;
+  }
+  .footer{
+      display:flex;
+      justify-content: space-around;
+      margin:4rem;
+      flex-wrap: wrap;
+      background:rgb(180, 60, 80); 
+
+  }
+  .footer-item{
+      margin:1rem;
+      cursor:pointer;
+
+  }
+
+  .footer-item li:hover, a:hover, nav li:hover{
+      color:rgb(122, 122, 177);
+      transition:0.5s;
+  }
+
+
+@media (max-width: 500px) {
+    .card-recommend {
+     flex-direction: column;
+     
+     }
+     .right-read{
+        width: 100%;
+     }
+    }
+
+    @media (max-width: 880px) {
+        .minor-news{
+            flex-wrap: wrap;
+            
+        }
+        .footer{
+            flex-direction: column;
+        }
+        }
+    
