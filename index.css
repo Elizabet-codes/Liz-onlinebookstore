@@ -95,7 +95,7 @@ img {
   }
 .best-seller, .new-arrival{
   
-    margin:2rem;
+    margin:.6rem;
     /* border:1px solid white; */
     padding:2rem;
     background: rgb(68, 59, 59);
@@ -137,12 +137,14 @@ img {
     margin:1rem;
    
   }
+.left-read img{
+    width:25rem;
+}
 
-
-  .right-read{
+  .right-read {
       text-align:left;
       padding:.9rem;
-      line-height: 1.5rem;
+      letter-spacing: .1rem;
       width: 40%;
   }
 
@@ -206,7 +208,7 @@ img {
      
   }
   .about-us{
-      margin:2rem;
+     
      
       
   }
@@ -217,13 +219,14 @@ img {
   .footer{
       display:flex;
       justify-content: space-around;
-      margin:4rem;
+    margin-top: 3rem;
       flex-wrap: wrap;
       background:rgb(180, 60, 80); 
+      width:100%;
 
   }
   .footer-item{
-      margin:1rem;
+      /* margin:1rem; */
       cursor:pointer;
 
   }
@@ -239,9 +242,10 @@ img {
      flex-direction: column;
      
      }
-     .right-read{
-        width: 100%;
+     .about-us{
+         flex-wrap: wrap;
      }
+    
     }
 
     @media (max-width: 880px) {
@@ -252,5 +256,11 @@ img {
         .footer{
             flex-direction: column;
         }
+        .card-recommend{
+            flex-direction: column;
+        }
+        .right-read{
+            width: 100%;
+         }
         }
     
